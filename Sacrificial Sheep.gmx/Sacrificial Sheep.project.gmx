@@ -7,9 +7,24 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprie_test</sprite>
+    <sprite>sprites\sheep_test</sprite>
+    <sprite>sprites\sheep_dead</sprite>
+    <sprite>sprites\spike_test</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_partBlood</object>
+    <object>objects\object1</object>
+    <object>objects\object2</object>
+    <object>objects\obj_basic_sheep</object>
+    <object>objects\invis_tile</object>
+    <object>objects\spikes</object>
+    <object>objects\dead_sheep</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\roomtest</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
