@@ -10,13 +10,12 @@
     <sprite>sprites\sheep_test</sprite>
     <sprite>sprites\sheep_dead</sprite>
     <sprite>sprites\spike_test</sprite>
+    <sprite>sprites\blood</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_partBlood</object>
-    <object>objects\object1</object>
-    <object>objects\object2</object>
     <object>objects\obj_basic_sheep</object>
     <object>objects\invis_tile</object>
     <object>objects\spikes</object>

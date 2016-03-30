@@ -19,7 +19,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>dead_sheep</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -42,6 +42,12 @@ part_type_life(partBlood,50,100);
 
 // create emmmiter
 partBlood_emit = part_emitter_create(partBlood_sys);
+
+//update emmitter
+part_emitter_region(partBlood_sys,partBlood_emit,x+5,x-5,dead_sheep.y+5,dead_sheep.y-5,1,1);
+part_emitter_burst(partBlood_sys,partBlood_emit,partBlood,500);
+
+
 </string>
           </argument>
         </arguments>
