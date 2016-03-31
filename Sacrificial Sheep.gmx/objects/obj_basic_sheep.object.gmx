@@ -56,8 +56,20 @@ movespeed = 4;
 { gravity = 0.7 gravity_direction = 270 } 
 else { gravity=0 gravity_direction = 270 } 
 //the arrow keys&lt;,&gt;,^ 
-if place_free(x-4,y)and keyboard_check(vk_left){x-=4} 
-if place_free(x+4,y)and keyboard_check(vk_right){x+=4} 
+if place_free(x-4,y)and keyboard_check(vk_left){x-=4}
+//else if !place_free(x-4,y-30 ){y-=32}
+//else if !place_free(x-4,y&lt;=-16 ){y-=32}
+else if !place_free(x-4,y-30)and place_free(x-4,y-32) {y-=34}
+//else if !place_free(x-4,y-17 ){vspeed=-10}
+       
+
+if place_free(x+4,y)and keyboard_check(vk_right){x+=4}
+else if !place_free(x+4,y-30)and place_free(x+4,y-32) {y-=34}
+//else if !place_free(x+4,y&gt;-16 ){y-=32}
+//else if !place_free(x+4,y&lt;-17 ){vspeed=0}
+
+//else if place_free(x+4, y-32)and keyboard_check(vk_left){x+=4 y-=32}
+
 if !place_free(x,y+1) and keyboard_check(vk_up){vspeed=-10}
 </string>
           </argument>
@@ -193,6 +205,7 @@ part_emitter_burst(partBlood_sys,partBlood_emit,partBlood,500);
           <argument>
             <kind>1</kind>
             <string>move_contact_solid(direction,12); vspeed=0;
+
 </string>
           </argument>
         </arguments>
