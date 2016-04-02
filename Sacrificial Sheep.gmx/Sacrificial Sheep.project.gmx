@@ -11,8 +11,22 @@
     <sprite>sprites\sheep_dead</sprite>
     <sprite>sprites\spike_test</sprite>
     <sprite>sprites\blood</sprite>
+    <sprites name="menu">
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_exit</sprite>
+    </sprites>
+    <sprites name="Level Exit">
+      <sprite>sprites\spr_level_exit</sprite>
+      <sprite>sprites\spr_level_exit_opening</sprite>
+    </sprites>
+    <sprites name="saw">
+      <sprite>sprites\spr_saw</sprite>
+      <sprite>sprites\spr_saw_bloody</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bk_main</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_partBlood</object>
@@ -20,8 +34,15 @@
     <object>objects\invis_tile</object>
     <object>objects\spikes</object>
     <object>objects\dead_sheep</object>
+    <object>objects\obj_level_exit</object>
+    <object>objects\obj_saw</object>
+    <objects name="menu">
+      <object>objects\obj_start</object>
+      <object>objects\obj_exit</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_mainmenu</room>
     <room>rooms\roomtest</room>
   </rooms>
   <help>
