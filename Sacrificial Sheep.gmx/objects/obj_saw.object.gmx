@@ -110,7 +110,7 @@ if sheepHit == false
 if sheepHit == false
     {
         sheepHit = true;
-        alarm[0] = 60;
+        alarm[0] = 200;
         obj_basic_sheep.x = obj_basic_sheep.xstart;
         obj_basic_sheep.y = obj_basic_sheep.ystart;
         

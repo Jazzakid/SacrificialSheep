@@ -59,18 +59,21 @@ else { gravity=0 gravity_direction = 270 }
 if place_free(x-4,y)and keyboard_check(vk_left){x-=4}
 //else if !place_free(x-4,y-30 ){y-=32}
 //else if !place_free(x-4,y&lt;=-16 ){y-=32}
-else if !place_free(x-4,y-30)and place_free(x-4,y-32) {y-=34}
+else if !place_free(x-4,y-30)and place_free(x-4,y-32) and keyboard_check(vk_space) {y-=34}
 //else if !place_free(x-4,y-17 ){vspeed=-10}
        
 
 if place_free(x+4,y)and keyboard_check(vk_right){x+=4}
-else if !place_free(x+4,y-30)and place_free(x+4,y-32) {y-=34}
+else if !place_free(x+4,y-30)and place_free(x+4,y-32) and keyboard_check(vk_space) {y-=34}
 //else if !place_free(x+4,y&gt;-16 ){y-=32}
 //else if !place_free(x+4,y&lt;-17 ){vspeed=0}
 
 //else if place_free(x+4, y-32)and keyboard_check(vk_left){x+=4 y-=32}
 
+//variable jumping jump
 if !place_free(x,y+1) and keyboard_check(vk_up){vspeed=-10}
+
+if(keyboard_check_released(vk_up) and vspeed&lt;0){vspeed*=0.5;}
 </string>
           </argument>
         </arguments>
