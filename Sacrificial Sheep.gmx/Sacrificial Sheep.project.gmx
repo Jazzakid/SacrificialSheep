@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_saw</sound>
+    <sound>sound\snd_spikes</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprie_test</sprite>
     <sprite>sprites\sheep_test</sprite>

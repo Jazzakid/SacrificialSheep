@@ -113,6 +113,7 @@ if sheepHit == false
         alarm[0] = 200;
         obj_basic_sheep.x = obj_basic_sheep.xstart;
         obj_basic_sheep.y = obj_basic_sheep.ystart;
+        audio_play_sound(snd_saw, 10, false);
         
         //Create Jack's particle system
         partBlood_sys = part_system_create();
