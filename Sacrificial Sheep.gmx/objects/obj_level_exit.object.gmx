@@ -33,7 +33,7 @@ image_speed = 0.3;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_basic_sheep">
+    <event eventtype="4" ename="obj_player">
       <action>
         <libid>1</libid>
         <id>603</id>

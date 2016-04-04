@@ -87,7 +87,7 @@ if sheepHit == false
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_basic_sheep">
+    <event eventtype="4" ename="obj_player">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -111,8 +111,8 @@ if sheepHit == false
     {
         sheepHit = true;
         alarm[0] = 200;
-        obj_basic_sheep.x = obj_basic_sheep.xstart;
-        obj_basic_sheep.y = obj_basic_sheep.ystart;
+        obj_player.x = obj_player.xstart;
+        obj_player.y = obj_player.ystart;
         audio_play_sound(snd_saw, 10, false);
         
         //Create Jack's particle system

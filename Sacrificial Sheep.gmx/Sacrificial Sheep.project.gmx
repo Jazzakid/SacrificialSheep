@@ -9,8 +9,12 @@
     <sound>sound\snd_spikes</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprie_test</sprite>
-    <sprite>sprites\sheep_test</sprite>
+    <sprite>sprites\spr_player_idle</sprite>
+    <sprite>sprites\spr_player_move</sprite>
+    <sprite>sprites\spr_player_jump</sprite>
+    <sprite>sprites\spr_player_fall</sprite>
+    <sprite>sprites\spr_corpse</sprite>
+    <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\sheep_dead</sprite>
     <sprite>sprites\spike_test</sprite>
     <sprite>sprites\blood</sprite>
@@ -33,8 +37,8 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_partBlood</object>
-    <object>objects\obj_basic_sheep</object>
-    <object>objects\invis_tile</object>
+    <object>objects\obj_player</object>
+    <object>objects\obj_wall</object>
     <object>objects\spikes</object>
     <object>objects\dead_sheep</object>
     <object>objects\obj_level_exit</object>
