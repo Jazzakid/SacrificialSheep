@@ -47,6 +47,16 @@
       <object>objects\obj_start</object>
       <object>objects\obj_exit</object>
     </objects>
+    <objects name="mats">
+      <object>objects\obj_dead_platform</object>
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_player_new</object>
+      <object>objects\obj_powerup</object>
+      <object>objects\obj_saw_new</object>
+      <object>objects\obj_spikes</object>
+      <object>objects\obj_wall_new</object>
+      <object>objects\obj_enemy_nofall</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_mainmenu</room>
